@@ -91,6 +91,8 @@ button[type="submit"] {
   padding-bottom: 1.5vh;
   border-radius: 11px;
   background-color: rgba(202, 104, 137, 0.664);
+  font-family: elegant-text, 'Dancing Script', cursive, var(--system-ui);
+  font-size: inherit;
 }
 
 .submit-field a {
