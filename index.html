@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css-normalize/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./javascript.js" defer></script>
+  <title>Sign-up form</title>
+</head>
+<body>
+  <div id="page">
+    <div class="bg-img-field">
+      <div class="absolute-div">
+        <div class="logo">
+          <img src="./images/cupcake.png" alt="cupcake logo">
+          <h1>Fancy <br>Cupcakes</h1>
+        </div>
+      </div>
+      <div class="absolute-img-footer">
+        Picture by <a href="https://unsplash.com/@lvenfoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zhang liven</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </div>
+    </div>
+    <div class="form-field">
+      <div class="form-info">
+        <h2>This is not a real online service! We don't deliver cupcakes or anything for that matter. <br>Sign up <em>now</em> for a <em>fake</em> weekly cupcake delivery service. <br><br>You need this in your life!</h2>
+      </div>
+      <form action="http://httpbin.org/post" method="post">
+        <div class="form">
+          <h2>Let's get started!</h2>
+          <div class="inputs">
+            <div class="inputs-column-left">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required maxlength="25">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+              <label for="pwd">Password</label>
+              <input type="password" name="password" id="pwd" required minlength="5" maxlength="25">
+              <div id="error-pwd-message"></div>
+            </div>
+            <div class="inputs-column-right">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required maxlength="25">
+              <label for="phone-nr">Phone Number</label>
+              <input type="tel" name="phone-number" id="phone-nr" required minlength="3">
+              <label for="confirm-pwd">Confirm Password</label>
+              <input type="password" name="confirm-password" id="confirm-pwd" required minlength="5" maxlength="25">
+            </div>
+          </div>
+        </div>
+        <div class="submit-field">
+          <button type="submit" id="create-acc-btn">Create Account</button>
+          <p>Already have an account? <a href="./log-in.html">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

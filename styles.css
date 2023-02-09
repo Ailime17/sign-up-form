@@ -1,0 +1,167 @@
+@font-face {
+  font-family: good-vibes-font;
+  src: url(../../fonts/great-vibes/GreatVibes-Regular.otf);
+}
+
+@font-face {
+  font-family: elegant-text;
+  src: url(../../fonts/playfair-display/PlayfairDisplay-Regular.otf);
+}
+
+:root {
+  --system-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: elegant-text, var(--system-ui);
+}
+
+#page {
+  display: flex;
+  height: 100vh;
+}
+
+.bg-img-field {
+  width: 40%;
+  background-image: url(./images/minicakes.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.form-field {
+  background-image: linear-gradient(rgb(253, 228, 196), rgb(226, 208, 184));
+  width: 60%;
+  padding-top: 5vh;
+}
+
+/* lets get started */
+.form > h2 { 
+  background-color: whitesmoke;
+  margin-top: 6vh;
+  margin-bottom: 0;
+  padding: 2vw 2vw 2vw 3vw;
+}
+
+.form-info,
+.inputs h2,
+.inputs div,
+.submit-field {
+  margin-left: 3vw;
+}
+
+.inputs {
+  background-color: whitesmoke;
+  display: flex;
+  padding-bottom: 2vw;
+}
+
+.inputs input {
+  margin-bottom: 2vh;
+}
+
+.form {
+  box-shadow: 4px 3px 20px 0px rgb(0 0 0 / 43%);
+}
+
+.inputs-column-left,
+.inputs-column-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-column-left {
+  position: relative;
+}
+
+.form-info h2 {
+  margin: 0;
+  width: 45vw;
+  color: rgb(190, 77, 117);
+}
+
+#header-log-in {
+  color: black;
+}
+
+.submit-field {
+  margin-top: 4vh;
+}
+
+button[type="submit"] {
+  width: 15vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  border-radius: 11px;
+  background-color: rgba(202, 104, 137, 0.664);
+}
+
+.submit-field a {
+  text-decoration: none;
+  color: rgb(117, 48, 71); 
+  /* rgb(202, 104, 137); */
+}
+
+.absolute-div {
+  position: absolute;
+  background-color: rgba(255, 209, 149, 0.438);
+  width: 100%;
+  height: 25%;
+  top: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absolute-div img {
+  width: 15%;
+  height: auto;
+  float: left;
+}
+
+.absolute-div .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absolute-div h1 {
+  transform: rotate(-11.5deg);
+  font-family: good-vibes-font, var(--system-ui);
+  font-size: 3.5rem;
+}
+
+.absolute-img-footer {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: .9rem;
+  color: black;
+}
+
+.absolute-img-footer a {
+  color: black;
+}
+
+input {
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.error {
+  border: 1px solid rgba(226, 0, 0, 0.788);
+}
+
+input:focus {
+  box-shadow: 0px 0px 10px 0px blue;
+}
+
+label::after {
+  content: "*";
+}
+
+#error-pwd-message {
+  font-size: .8rem;
+  color: rgba(226, 0, 0, 0.788);
+  margin: 0;
+  position: absolute;
+  bottom: -2%;
+}
