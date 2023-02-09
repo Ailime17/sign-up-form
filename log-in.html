@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css-normalize/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sign-up form</title>
+</head>
+<body>
+  <div id="page">
+    <div class="bg-img-field">
+      <div class="absolute-div">
+        <div class="logo">
+          <img src="./images/cupcake.png" alt="cupcake logo">
+          <h1>Fancy <br>Cupcakes</h1>
+        </div>
+      </div>
+      <div class="absolute-img-footer">
+        Picture by <a href="https://unsplash.com/@lvenfoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zhang liven</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </div>
+    </div>
+    <div class="form-field">
+      <div class="form-info">
+        <h2 id="header-log-in"><br><br><br>Delicious fake cupcakes delivered to your doorstep...</h2>
+      </div>
+      <form action="http://httpbin.org/post" method="post">
+        <div class="form">
+          <h2></h2>
+          <div class="inputs">
+            <div class="inputs-column-left">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="inputs-column-right">
+              <label for="pwd">Password</label>
+              <input type="password" name="password" id="pwd" required minlength="5" maxlength="25">
+            </div>
+          </div>
+        </div>
+        <div class="submit-field">
+          <button type="submit">Log in</button>
+          <p>New here? <a href="./index.html">Create an account</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
